@@ -4,6 +4,7 @@ namespace UltraBizert.CarsCRUD.Commands
     {
         void Execute();
         bool ValidateData(string data);
+        bool InputRequired();
         string DataExample { get; }
     }
 }

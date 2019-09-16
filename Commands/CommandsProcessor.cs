@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text;
 using UltraBizert.CarsCRUD.IO;
 
 namespace UltraBizert.CarsCRUD.Commands
@@ -27,6 +28,18 @@ namespace UltraBizert.CarsCRUD.Commands
 
             command = commandsList[input];
             return true;
+        }
+
+        public string CommandsHelp()
+        {
+            var message = new StringBuilder();
+
+            foreach (var command in commandsList)
+            {
+                message.AppendLine($"{command.Key} : {command.Value.DataExample}");
+            }
+
+            return message.ToString();
         }
     }
 }

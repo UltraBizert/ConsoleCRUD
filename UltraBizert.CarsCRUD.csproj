@@ -51,6 +51,7 @@
     <Compile Include="Commands\UpdateCommand.cs" />
     <Compile Include="DataStructures\Car.cs" />
     <Compile Include="EntryPoint.cs" />
+    <Compile Include="IO\Extensions.cs" />
     <Compile Include="IO\InputProvider.cs" />
     <Compile Include="IO\StorageProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
